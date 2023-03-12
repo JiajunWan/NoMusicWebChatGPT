@@ -1,4 +1,4 @@
-import { CautionIcon, LightningChargeIcon, SunIcon } from "../../constants";
+import { CautionIcon, ImageIcon, TextIcon, VideoIcon } from "../../constants";
 import Footer from "../Footer";
 
 const RightSection = () => {
@@ -9,13 +9,13 @@ const RightSection = () => {
           <div className="flex flex-col items-center text-sm h-full md:h-screen bg-lightBlack">
             <div className="text-gray-800 w-full md:max-w-2xl lg:max-w-3xl md:h-full md:flex md:flex-col px-6">
               <h1 className="text-4xl text-gray-100 font-semibold text-center mt-6 sm:mt-[20vh] ml-auto mr-auto mb-10 sm:mb-16">
-                ChatGPT
+                NoMusic
               </h1>
               <div className="md:flex items-start text-center gap-3.5">
                 {[
                   {
-                    icon: <SunIcon />,
-                    title: "Examples",
+                    icon: <TextIcon />,
+                    title: "Text",
                     subTitle: [
                       `"Explain quantum computing in simple terms" →`,
                       `"Got any creative ideas for a 10 year old’s birthday?" →`,
@@ -24,22 +24,16 @@ const RightSection = () => {
                     hover: true,
                   },
                   {
-                    icon: <LightningChargeIcon />,
-                    title: "Capabilities",
+                    icon: <ImageIcon />,
+                    title: "Image",
                     subTitle: [
-                      `Remembers what user said earlier in the conversation`,
-                      `Allows user to provide follow-up corrections`,
-                      `Trained to decline inappropriate requests`,
                     ],
                     hover: false,
                   },
                   {
-                    icon: <CautionIcon />,
-                    title: "Limitations",
+                    icon: <VideoIcon />,
+                    title: "Video",
                     subTitle: [
-                      `May occasionally generate incorrect information`,
-                      `May occasionally produce harmful instructions or biased content`,
-                      `Limited knowledge of world and events after 2021`,
                     ],
                     hover: false,
                   },

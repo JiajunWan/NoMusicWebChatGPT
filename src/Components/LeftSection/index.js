@@ -36,7 +36,6 @@ const LeftSection = ({ show = false }) => {
                 ),
                 text: "Light mode",
               },
-              { icon: <DiscordIcon />, text: "OpenAI Discord" },
               { icon: <ExternalLinkIcon />, text: "Updates & FAQ" },
               { icon: <LogOutIcon />, text: "Log out" },
             ].map((item, index) => (
